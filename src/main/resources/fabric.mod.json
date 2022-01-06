@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblestone",
+  "version": "${version}",
+  "name": "Cobblestone",
+  "description": "cobblestone is a minecraft hacked client meant to suit all your needs :')",
+  "authors": [
+    "asciidude"
+  ],
+  "contact": {
+    "website": "https://cobblestone.glitch.me",
+    "repo": "https://github.com/asciidude/cobblestone.git"
+  },
+  "license": "MIT",
+  "icon": "assets/cobblestone/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cobblestone.client.CobblestoneClient"
+    ]
+  },
+  "mixins": [
+    "cobblestone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
